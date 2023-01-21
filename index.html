@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css" integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -155,7 +155,7 @@
       </nav>
       <div class="nav-mobile d-lg-none">
        <div class="container d-lg-none">
-        <div class="content d-flex align-items-center justify-content-around">
+        <div class="content d-flex align-items-center justify-content-between">
           <div class="d-flex flex-column text-center">
             <i class="fa-solid fa-house"></i>
             <a href="#">الرئيسية</a>
@@ -784,14 +784,18 @@
         </div>
       </section>
       <section id="testimonials" class="testimonials" style="margin: 200px 0;">
-        <div class="container">
+        <div class="container swiper mySwiper1">
           <div class="section-title d-flex justify-content-between">
             <p>منتجات جديدة</p>
-            <a href="#">المزيد</a>
+            <div class="">
+              <div class="swiper-button-next new"></div>
+              <div class="swiper-button-prev new2"></div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
-          <div class="row text-center gap-0">
-            <div class="content col-12 col-md-6 col-lg-4 mb-2">
-              <div class=" p-3" style="background-color: #EFF4E8;">
+          <div class="row text-center gap-0 swiper-wrapper">
+            <div class="content col-12 col-md-6 col-lg-4 mb-2 swiper-slide">
+              <div class=" main-testimonials p-3">
                 <div class="d-flex align-items-center">
                   <img src="img/Ellipse 1.png" class="me-3 mb-2" alt="">
                  <div class="text-start">
@@ -804,8 +808,8 @@
                 </p>
                 </div>
             </div>
-           <div class="content col-12 col-md-6 col-lg-4 mb-2">
-            <div class=" p-3" style="background-color: #EFF4E8;">
+           <div class="content col-12 col-md-6 col-lg-4 mb-2 swiper-slide">
+            <div class=" p-3 main-testimonials">
               <div class="d-flex align-items-center">
                 <img src="img/Ellipse 5.png" class="me-3 mb-2" alt="">
                <div class="text-start">
@@ -818,8 +822,8 @@
               </p>
               </div>
            </div>
-            <div class="content col-12 col-md-12 col-lg-4 mb-2">
-              <div class="p-3" style="background-color: #EFF4E8; ">
+            <div class="content col-12 col-md-12 col-lg-4 mb-2 swiper-slide">
+              <div class="p-3 main-testimonials">
                 <div class="d-flex align-items-center">
                   <img src="img/Ellipse2.png" class="me-3 mb-2" alt="">
                  <div class="text-start">
@@ -861,9 +865,9 @@
             <div class="col-12 col-md-2">
               <h5 class="mb-4" style="color: #5B8E19; font-weight: bold;">روابط سريعة</h5>
               <ul class="nav-item p-0">
-                <li class="nav-link pb-2"><a href="#" style="text-decoration: none; color: #000000;">سياسة الإستبدال و الإرجاع</a></li>
-                <li class="nav-link pb-2"><a href="#" style="text-decoration: none; color: #000000;">سياسة الخصوصية</a></li>
-                <li class="nav-link pb-2"><a href="#" style="text-decoration: none; color: #000000;">الشروط والأحكام</a></li>
+                <li class="nav-link pb-2"><a href="terms and conditions4.html" style="text-decoration: none; color: #000000;">سياسة الإستبدال و الإرجاع</a></li>
+                <li class="nav-link pb-2"><a href="terms and conditions3.html" style="text-decoration: none; color: #000000;">سياسة الخصوصية</a></li>
+                <li class="nav-link pb-2"><a href="terms and conditions.html" style="text-decoration: none; color: #000000;">الشروط والأحكام</a></li>
               </ul>
             </div>
             <div class="col-12 col-md-3">
@@ -918,6 +922,35 @@
             },
             1024: {
             slidesPerView: 5,
+            spaceBetween: 20,
+            },
+        },
+    });
+        var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            },
+            768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+            },
+            1024: {
+            slidesPerView: 3,
             spaceBetween: 20,
             },
         },

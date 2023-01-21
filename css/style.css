@@ -50,6 +50,7 @@ body {
     right: 10px;
     transform: translateY(-50%);
 }
+
 #mid-nav button {
     position: absolute;
     top: 50%;
@@ -106,12 +107,6 @@ i.fa-solid.fa-cart-shopping::after {
 .price-mobile img {
     width: 6px;
 }
-.search-form {
-    display: none;
-}
-.search-form.show-search {
-    display: block;
-}
 @media (max-width:768px) {
     #mid-nav {
         position: relative;
@@ -147,6 +142,13 @@ i.fa-solid.fa-cart-shopping::after {
         top: 50%;
         right: 32px;
         transform: translateY(-50%);
+    }
+    .search-form {
+        transform: translateY(-207%);
+        transition: all 0.3s;
+    }
+    .search-form.show-search {
+        transform: translateY(0%);
     }
 }
 .navbar {
@@ -233,6 +235,11 @@ nav.nav-mobile-categories.show {
     text-decoration: none;
     color: #333333;
     font-size: 14px;
+    padding-top: 8px;
+}
+#testimonials .content  .main-testimonials {
+    background: #EFF4E8;
+    border-radius: 8px;
 }
 /* //////////////////////////////////////////////////////////////header /////////////////////////////////////////////////////////////// */
 
@@ -264,6 +271,10 @@ nav.nav-mobile-categories.show {
     padding: 0 10px;
     color: var(--PRIMARY-COLOR);
     font-weight: bold;
+    margin-bottom: 30px;
+}
+#testimonials  .section-title p  {
+    margin-top: 20px;
 }
 .section-title a {
     text-decoration: none;
@@ -1359,8 +1370,16 @@ lord-icon {
 #product-main .row {
     flex-wrap: nowrap;
 }
-
-
+#product-main .row > * {
+    padding-left: 0;
+    padding-right: 24px;
+}
+.mySwiper1 .row  {
+    flex-wrap: nowrap;
+}
+.btn-nav.d-flex.flex-column.text-center {
+    padding-right: 30px;
+}
 .swiper {
     width: 100%;
     height: 100%;
@@ -1386,12 +1405,12 @@ lord-icon {
     align-items: center;
   }
 
-  .swiper-slide img {
+  /* .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+  } */
   .swiper-button-prev:after{
     content: 'prev';
     background-color: #ddd;
@@ -1402,7 +1421,7 @@ lord-icon {
     height: 40px;
     position: absolute;
     top: 50%;
-    right: -100%;
+    right: -70%;
     transform: translate(-50%,-50%);
     display: flex;
     align-items: center;
@@ -1419,14 +1438,52 @@ lord-icon {
     height: 40px;
     position: absolute;
     top: 50%;
-    right: -100%;
+    left: 70%;
     transform: translate(-50%,-50%);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
 }
-
-
-
-
+.new2 {
+    left: 112px !important;
+    right: auto !important;
+}
+ .new2:after {
+    content: 'next';
+    background-color: #FFFFFF;
+    color: #242424;
+    font-weight: bold;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -81px;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.15));
+} 
+ .new:after {
+    content: 'next';
+    background-color: #FFFFFF;
+    color: #242424;
+    font-weight: bold;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -81px;
+    left: 44px;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.15));
+} 
+/* .swiper-rtl .swiper-button-prev:after */
+/* .swiper-button-prev, .swiper-rtl .swiper-button-next */
