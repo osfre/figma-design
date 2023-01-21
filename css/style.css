@@ -225,9 +225,12 @@ nav.nav-mobile-categories.show {
     background-color: var(--PRIMARY-COLOR);
     color: #EFF4E8;
 }
-.btn-nav i{
+.btn-login i.fa-regular.fa-user.changecolor2 {
     color: #5B8E19;
 }
+.btn-nav i.fa-solid.fa-bars.changecolor {
+    color: #5B8E19;
+} 
 .nav-mobile i {
     font-size: 20px;
 }
@@ -1067,6 +1070,10 @@ lord-icon {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.top-thank a {
+    text-decoration: none;
+    color: #828282;
 }
 #thankforshopping .top-thank p:first-of-type {
     color: var(--PRIMARY-COLOR);
