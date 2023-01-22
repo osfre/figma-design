@@ -1336,6 +1336,11 @@ lord-icon {
     lord-icon {
         display: block !important;
     }
+    .carousel-indicators {
+        transform: rotate(90deg);
+        left: -86%;
+        bottom: 33%;
+    }
 }
 lord-icon {
     display: none;
