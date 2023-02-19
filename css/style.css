@@ -37,6 +37,9 @@ body {
     padding: 15px 35px 15px 130px;
     border: 0;
 }
+#mid-nav input::placeholder {
+    color: #000000;
+}
 #mid-nav input:focus {
     outline-color: #DDD;
 }
